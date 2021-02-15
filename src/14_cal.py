@@ -30,3 +30,21 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+# year = int(input('What year is it?: '))
+# month = int(input('What month is it?: '))
+
+# def date(year, month):
+#    if (year):
+
+
+try:
+    year = int(input("What year is it?: "))
+except:
+    year = datetime.now().year
+try:
+    month = int(input("What month is it?: "))
+except:
+    month = datetime.now().month
+
+print(calendar.month(year, month1))
